@@ -80,7 +80,7 @@ for (let { preview, original, description } of images) {
    let li = document.createElement('li');
    li.classList.add('gallery-item');
    li.innerHTML = `
-  <a class="gallery-link" href="${original}">
+  <a class="gallery-link" href="$large-image.jpg">
     <img
       class="gallery-image"
       src="${preview}"
@@ -88,6 +88,7 @@ for (let { preview, original, description } of images) {
       alt="${description}"
     />
   </a>`
+   li.querySelector('a').setAttribute('href', original)
    let imgLi = li.querySelector('img');
    imgLi.style.width = '360px';
    imgLi.style.height = '200px'
