@@ -80,7 +80,7 @@ for (let { preview, original, description } of images) {
    let li = document.createElement('li');
    li.classList.add('gallery-item');
    li.innerHTML = `
-  <a class="gallery-link" href="large-image.jpg">
+  <a class="gallery-link" href="${original}">
     <img
       class="gallery-image"
       src="${preview}"
