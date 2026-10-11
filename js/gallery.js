@@ -104,6 +104,7 @@ gallery.addEventListener('click', key => {
    if (key.target.tagName == "IMG") {
       console.log(key.target.getAttribute('data-source'));
       moduleBox.element().querySelector('img').setAttribute('src', key.target.getAttribute('data-source'))
+      moduleBox.element().querySelector('img').setAttribute('alt', key.target.getAttribute('alt'))
       moduleBox.show()
    }
 })
