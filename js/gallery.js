@@ -80,7 +80,7 @@ for (let { preview, original, description } of images) {
    let li = document.createElement('li');
    li.classList.add('gallery-item');
    li.innerHTML = `
-  <a class="gallery-link" href="$large-image.jpg">
+  <a class="gallery-link" href="large-image.jpg">
     <img
       class="gallery-image"
       src="${preview}"
@@ -97,7 +97,7 @@ for (let { preview, original, description } of images) {
 }
 
 gallery.append(formular)
-const moduleBox = basicLightbox.create(`<img src="" alt="" class="module-box"></img>`);
+const moduleBox = basicLightbox.create(`<img src="" alt="" class="module-box">`);
 
 gallery.addEventListener('click', key => {
    key.preventDefault();
